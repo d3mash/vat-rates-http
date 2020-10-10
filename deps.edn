@@ -4,7 +4,10 @@
         cheshire {:mvn/version "5.10.0"}
         org.clojure/java.jdbc {:mvn/version "0.7.11"}
         org.mariadb.jdbc/mariadb-java-client {:mvn/version "2.7.0"}
-        com.zaxxer/HikariCP {:mvn/version "3.4.5"} }
+        com.zaxxer/HikariCP {:mvn/version "3.4.5"}
+        io.pedestal/pedestal.service {:mvn/version "0.5.8"}
+        io.pedestal/pedestal.route {:mvn/version "0.5.8"}
+        io.pedestal/pedestal.jetty {:mvn/version "0.5.8"}}
  :aliases {:dev
            {:extra-paths ["test"]
             :extra-deps {tools {:git/url "https://github.com/Zallin/tools"
