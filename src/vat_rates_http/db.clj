@@ -10,9 +10,12 @@
     (let [ds (HikariDataSource.)]
       (.setMaximumPoolSize ds 10)
       (.setDriverClassName ds "org.mariadb.jdbc.Driver")
-      (.setJdbcUrl ds "jdbc:mariadb://localhost:3306/vat_rates_test")
+      (.setJdbcUrl ds "jdbc:mariadb://localhost:3306/vat-rates-test")
       (.addDataSourceProperty ds "user" (System/getenv "MYSQL_USER"))
       (.addDataSourceProperty ds "password" (System/getenv "MYSQL_ROOT_PASSWORD"))
 
       (reset! db {:datasource ds}))
     @db))
+
+(def q j/query)
+(comment (j/query @db "show databases"))

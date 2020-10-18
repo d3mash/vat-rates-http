@@ -1,5 +1,6 @@
 MYSQL_ROOT_PASSWORD=password
 MYSQL_USER=root
+MYSQL_DATABASE=vat-rates-test
 
 .EXPORT_ALL_VARIABLES:
 .PHONY: test
