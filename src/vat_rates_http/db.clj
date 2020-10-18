@@ -18,4 +18,5 @@
     @db))
 
 (def q j/query)
-(comment (j/query @db "show databases"))
+(comment (j/query @db "show databases")
+         (reset! db nil))
