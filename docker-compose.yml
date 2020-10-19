@@ -10,3 +10,5 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
     volumes:
       - './data:/var/lib/mysql'
+    command:
+      --default-time-zone='Europe/Moscow'
